@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en" data-sound="paused">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Disordered: Immersive Mindfulness Through Audio &amp; Visuals</title>
+  <meta name="description" content="Disordered: A Mental Health Initiative. A mindfulness experience designed to promote emotional regulation through calming guided journeys, soundscapes, and reactive visuals.">
+  <meta name="theme-color" content="#0d111b">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://use.typekit.net/svn1zcp.css">
+  <link rel="stylesheet" href="css/site.css">
+  <script type="module" src="js/site.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell">
+      <a class="logo" href="index.html" aria-label="Disordered home">
+        <img class="logo-base" src="assets/type/logo.png" alt="" width="1189" height="213">
+        <img class="logo-hover" src="assets/type/logo-hover.png" alt="" width="1189" height="213">
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+      </nav>
+      <button class="icon-btn sound-trigger" popovertarget="sound-panel" aria-label="Sound controls">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+      </button>
+      <div id="sound-panel" class="sound-popover" popover>
+        <button class="icon-btn" data-sound-toggle aria-label="Play soundscape">
+          <svg class="when-paused" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg>
+          <svg class="when-playing" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4.5" width="4" height="15" rx="1"/><rect x="14" y="4.5" width="4" height="15" rx="1"/></svg>
+        </button>
+        <input type="range" min="0" max="100" value="50" data-sound-volume aria-label="Soundscape volume">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero shell">
+      <h1><img class="lettering" src="assets/type/homeH2.png" alt="Immersive Mindfulness Through Audio &amp; Visuals" width="2964" height="130"></h1>
+      <p class="lede">A mindfulness experience designed to promote emotional regulation through calming guided journeys, soundscapes, and reactive visuals.</p>
+      <button class="play-hero" data-sound-toggle aria-label="Play soundscape">
+        <span class="disc">
+          <svg class="when-paused" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg>
+          <svg class="when-playing" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4.5" width="4" height="15" rx="1"/><rect x="14" y="4.5" width="4" height="15" rx="1"/></svg>
+        </span>
+        <span class="when-paused">Play the soundscape</span>
+        <span class="when-playing">Pause the soundscape</span>
+      </button>
+    </section>
+
+    <section class="section shell" aria-labelledby="choose">
+      <h2 id="choose" class="visually-hidden">Choose an experience</h2>
+      <div class="categories">
+        <button class="category" data-category="recharge">
+          <img src="assets/img/categories/recharge.png" alt="" loading="lazy">
+          <span class="category-label">Recharge<small>Begin</small></span>
+        </button>
+        <button class="category" data-category="reassurance">
+          <img src="assets/img/categories/reassurance.jpg" alt="" loading="lazy">
+          <span class="category-label">Reassurance<small>Begin</small></span>
+        </button>
+        <button class="category" data-category="relax">
+          <img src="assets/img/categories/relax.jpg" alt="" loading="lazy">
+          <span class="category-label">Relax &amp; Recenter<small>Begin</small></span>
+        </button>
+        <button class="category" data-category="grounding">
+          <img src="assets/img/categories/grounding.jpg" alt="" loading="lazy">
+          <span class="category-label">Grounding<small>Begin</small></span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="duration" class="sheet" aria-labelledby="duration-title">
+    <form method="dialog"><button class="icon-btn sheet-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button></form>
+    <div class="sheet-inner">
+      <h2 id="duration-title" data-category-title>Recharge</h2>
+      <p class="eyebrow"><img class="lettering" src="assets/type/experienceH2.png" alt="Select your experience" style="max-height:22px"></p>
+      <ul class="durations">
+        <li><a class="duration" data-minutes="2" href="#"><strong>2 min</strong><span>A quick mindfulness session.</span></a></li>
+        <li><a class="duration" data-minutes="5" href="#"><strong>5 min</strong><span>A balanced mindfulness practice.</span></a></li>
+        <li><a class="duration" data-minutes="7" href="#"><strong>7 min</strong><span>An immersive mindfulness experience.</span></a></li>
+      </ul>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <span>© 2024 Disordered. All rights reserved.</span>
+      <span>In crisis? Call or text <a href="tel:988">988</a> (US), any time.</span>
+    </div>
+  </footer>
+</body>
+</html>

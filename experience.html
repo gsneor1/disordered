@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Experience | Disordered</title>
+  <meta name="description" content="A guided Disordered mindfulness experience.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://use.typekit.net/svn1zcp.css">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/experience.css">
+  <script type="module" src="js/experience.js"></script>
+</head>
+<body class="player" data-state="loading">
+  <video id="video" playsinline preload="auto"></video>
+  <div class="player-scrim" aria-hidden="true"></div>
+
+  <button class="player-surface" id="surface" aria-label="Pause"></button>
+
+  <div class="player-indicator" aria-hidden="true">
+    <svg class="when-paused" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l12-7.5z"/></svg>
+    <svg class="when-playing" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4.5" width="4" height="15" rx="1"/><rect x="14" y="4.5" width="4" height="15" rx="1"/></svg>
+  </div>
+
+  <header class="player-bar">
+    <div class="player-volume">
+      <button class="icon-btn" id="mute" aria-label="Mute">
+        <svg class="when-sound" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+        <svg class="when-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="m23 9-6 6M17 9l6 6"/></svg>
+      </button>
+      <input type="range" id="volume" min="0" max="100" value="50" aria-label="Volume">
+    </div>
+    <p class="player-title" id="title"></p>
+    <a class="player-exit" id="exit" href="index.html">Exit</a>
+  </header>
+
+  <button class="player-hint" id="unmute-hint" hidden>Tap for sound</button>
+  <p class="player-message" id="message" hidden></p>
+
+  <div class="player-progress" aria-hidden="true"><span id="progress"></span></div>
+</body>
+</html>

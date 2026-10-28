@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en" data-sound="paused">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Disordered</title>
+  <meta name="description" content="About Disordered: A Mental Health Initiative, and the team behind it.">
+  <meta name="theme-color" content="#0d111b">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://use.typekit.net/svn1zcp.css">
+  <link rel="stylesheet" href="css/site.css">
+  <script type="module" src="js/site.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell">
+      <a class="logo" href="index.html" aria-label="Disordered home">
+        <img class="logo-base" src="assets/type/logo.png" alt="" width="1189" height="213">
+        <img class="logo-hover" src="assets/type/logo-hover.png" alt="" width="1189" height="213">
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="resources.html">Resources</a>
+        <a href="about.html" aria-current="page">About</a>
+      </nav>
+      <button class="icon-btn sound-trigger" popovertarget="sound-panel" aria-label="Sound controls">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+      </button>
+      <div id="sound-panel" class="sound-popover" popover>
+        <button class="icon-btn" data-sound-toggle aria-label="Play soundscape">
+          <svg class="when-paused" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg>
+          <svg class="when-playing" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4.5" width="4" height="15" rx="1"/><rect x="14" y="4.5" width="4" height="15" rx="1"/></svg>
+        </button>
+        <input type="range" min="0" max="100" value="50" data-sound-volume aria-label="Soundscape volume">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro shell">
+      <h1><img class="lettering" src="assets/type/aboutH2.png" alt="About Disordered: A Mental Health Initiative"></h1>
+      <p class="lede">An evolution of our first prototype, <em>Dis</em>ordered is a mobile mindfulness experience designed to promote emotional regulation by allowing users to engage in a calming guided mindfulness journey accompanied by soundscapes and reactive visuals.</p>
+      <p class="lede">Our website implements the research we gathered from the Fall 2024 semester by honing in on key emotions commonly found in different mental disorder groups, and uses further research to provide multiple, effective experiences varying in length. This takes a different approach to our same end goal of promoting mindfulness and wellbeing, and helps users create a temporary safe space to process and feel their emotions, all from whatever device they may have accessible.</p>
+    </section>
+
+    <section class="section shell" aria-labelledby="team">
+      <div class="section-head">
+        <h2 id="team"><img class="lettering" src="assets/type/meetTheTeam.png" alt="Meet the Team"></h2>
+      </div>
+      <div class="card-grid team">
+        <article class="card" data-card>
+          <div class="card-body">
+              <h3 class="card-title">Kore Omodara</h3>
+              <p class="card-meta">Visual Development Lead</p>
+              <p class="card-meta">MAS (UI/UX Design)</p>
+              <button class="card-trigger">Read bio</button>
+          </div>
+          <p class="card-foot"><a href="mailto:oomodar1@asu.edu">oomodar1@asu.edu</a></p>
+          <template>
+            <h2>Kore Omodara</h2>
+            <p class="eyebrow">Visual Development Lead · MAS (UI/UX Design)</p>
+            <p>Hi! I'm Kore, a senior MAS student with a concentration in UI/UX design and iOS development. As the Visual Development Lead for Disordered, I've been responsible for designing and prototyping the web experience in Figma, establishing the visual and interactive foundation for development this semester. I've also contributed to visual development in After Effects, helping shape the aesthetic and emotional tone of our experiences. This project reflects my passion for building interdisciplinary, mission-driven products—Disordered wouldn't exist without the diverse talents of our team. Beyond design and development, I'm deeply invested in mindfulness and mental health. With Disordered, I want to create a space where students can engage with mindfulness in a way that feels accessible, calming, and integrated into their everyday routines.</p>
+          </template>
+        </article>
+
+        <article class="card" data-card>
+          <div class="card-body">
+              <h3 class="card-title">Paul Pagay</h3>
+              <p class="card-meta">Music Composition &amp; Production</p>
+              <p class="card-meta">MAS (Music)</p>
+              <button class="card-trigger">Read bio</button>
+          </div>
+          <p class="card-foot"><a href="mailto:ppagay@asu.edu">ppagay@asu.edu</a></p>
+          <template>
+            <h2>Paul Pagay</h2>
+            <p class="eyebrow">Music Composition &amp; Production · MAS (Music)</p>
+            <p>Hello everyone! My name is Paul. I'm a senior MAS student leading the Music Composition and Production for Disordered. I generate soundscapes that relate to the website's significance towards mindfulness and meditation. I've always felt like music plays a large role in our mental health and calming our nerves. With the use of Ableton Live 12 as our main DAW, I'm grateful to express my musical skills and translate it into an entertaining yet meaningful platform for mental health awareness. With Disordered, I am able to provide an intuitive yet sonically-pleasing approach that can lure in audiences to understand more about the website and promoting mindfulness through sound.</p>
+          </template>
+        </article>
+
+        <article class="card" data-card>
+          <div class="card-body">
+              <h3 class="card-title">Nicole Saab</h3>
+              <p class="card-meta">Visual Design &amp; Prototyping</p>
+              <p class="card-meta">MAS (GIT)</p>
+              <button class="card-trigger">Read bio</button>
+          </div>
+          <p class="card-foot"><a href="mailto:nsaab@asu.edu">nsaab@asu.edu</a></p>
+          <template>
+            <h2>Nicole Saab</h2>
+            <p class="eyebrow">Visual Design &amp; Prototyping · MAS (GIT)</p>
+            <p>Hi, I'm Nicole, a senior MAS student specializing in web design and development. For this project, I focused on visual design and prototyping in Figma, translating those designs into a functional and accessible user experience. This project is especially meaningful to me as it brings together my technical and creative strengths while contributing to mental health awareness. By merging thoughtful design with purposeful development, we aim to create a calming digital space that supports mindfulness and well-being.</p>
+          </template>
+        </article>
+
+        <article class="card" data-card>
+          <div class="card-body">
+              <h3 class="card-title">Grant Sneor</h3>
+              <p class="card-meta">Web Development Lead</p>
+              <p class="card-meta">MAS (GIT)</p>
+              <button class="card-trigger">Read bio</button>
+          </div>
+          <p class="card-foot"><a href="mailto:gsneor@asu.edu">gsneor@asu.edu</a></p>
+          <template>
+            <h2>Grant Sneor</h2>
+            <p class="eyebrow">Web Development Lead · MAS (GIT)</p>
+            <p>Hi everyone! My name is Grant Sneor, and I am senior MAS student focusing on Graphic Information Technology. I spent my time as a Web Development lead and helped create the stylistic choices and functionality present throughout our project. Disordered holds an extremely special place in my heart due to the way mental health advocacy has made a positive impact on my own life; I have always been eager to share my experiences and knowledge with others to help those around me, and creating this project gave me the perfect outlet to do so, and I'm proud of the work we've put together as a team.</p>
+          </template>
+        </article>
+
+        <article class="card" data-card>
+          <div class="card-body">
+              <h3 class="card-title">Simone Staneff</h3>
+              <p class="card-meta">Web Development Lead</p>
+              <p class="card-meta">MAS (General)</p>
+              <button class="card-trigger">Read bio</button>
+          </div>
+          <p class="card-foot"><a href="mailto:sstaneff@asu.edu">sstaneff@asu.edu</a></p>
+          <template>
+            <h2>Simone Staneff</h2>
+            <p class="eyebrow">Web Development Lead · MAS (General)</p>
+            <p>Hey! I'm Simone, a senior MAS student and one of the Web Development leads for Disordered. I've focused on building and designing the core structure and functionality of our website through Visual Studio Code. This project gives us the opportunity to showcase our skills into something we are passionate about, which is bringing awareness to mental health through mindfulness. Through our project Disordered we aim to give users a safe space to practice mindfulness for their personal needs/goals.</p>
+          </template>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="detail" class="sheet">
+    <form method="dialog"><button class="icon-btn sheet-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button></form>
+    <div class="sheet-inner" data-detail-body></div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <span>© 2024 Disordered. All rights reserved.</span>
+      <span>In crisis? Call or text <a href="tel:988">988</a> (US), any time.</span>
+    </div>
+  </footer>
+</body>
+</html>
